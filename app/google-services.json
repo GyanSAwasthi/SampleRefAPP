@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "119635172440",
+    "firebase_url": "https://wallet-115b4.firebaseio.com",
+    "project_id": "wallet-115b4",
+    "storage_bucket": "wallet-115b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119635172440:android:4bedcfe3c6931fdc",
+        "android_client_info": {
+          "package_name": "in.bitstreet.com.itdwallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119635172440-q0t5k5dc7tulc1p8rnqkqtb04iluujlt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApz3aNjgUV2IaD-jh15Q1mDB75zBsfKc4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

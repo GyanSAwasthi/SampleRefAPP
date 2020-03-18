@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pin_content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundcolor"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="@drawable/logo"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/verify_otp_txt"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="@string/verify_txt"
+            android:textSize="14dp"
+
+            android:textColor="@color/white"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/pin_label_margin"
+            android:layout_marginTop="20dp"
+            android:textSize="14dp"
+            android:text="@string/pin_label_text"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/pin_first_edittext"
+            style="@style/pin_edittext_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:contentDescription="@string/pin_content_desc" />
+
+        <EditText
+            android:id="@+id/pin_second_edittext"
+            style="@style/pin_edittext_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:contentDescription="@string/pin_content_desc" />
+
+        <EditText
+            android:id="@+id/pin_third_edittext"
+            style="@style/pin_edittext_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:contentDescription="@string/pin_content_desc" />
+
+        <EditText
+            android:id="@+id/pin_forth_edittext"
+            style="@style/pin_edittext_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:contentDescription="@string/pin_content_desc" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <EditText
+            android:id="@+id/pin_hidden_edittext"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:contentDescription="@string/pin_content_desc"
+            android:cursorVisible="false"
+            android:gravity="center_horizontal"
+            android:maxLength="5"
+            android:inputType="number"
+            android:password="true"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tvResendOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="20dp"
+            android:textColor="@color/white"
+            android:text="@string/resend_otp_txt"
+            android:textStyle="bold"
+            android:paddingTop="20dp"/>
+
+
+        <Button
+            android:id="@+id/btn_verify_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:text="@string/btn_verify" />
+    </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

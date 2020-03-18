@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:background="@color/backgroundcolor"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/headphonelarge" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/how_cn_hlp"
+                android:textSize="20dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingRight="4dp"
+            android:paddingLeft="4dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_submission"
+                android:layout_gravity="center"
+                android:textSize="13dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="20dp">
+
+
+            <TextView
+                android:id="@+id/tv_create_ticket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp"
+                android:text="@string/create_tickect"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#e5f2fb"
+                android:layout_marginBottom="10dp"
+
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_active_ticket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp"
+
+                android:text="@string/active_tickect"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#e5f2fb"
+                android:layout_marginBottom="10dp"
+
+                android:layout_marginTop="10dp"/>
+
+
+            <TextView
+                android:id="@+id/history_ticket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp"
+
+                android:text="@string/history_tickect"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#e5f2fb"
+                android:layout_marginBottom="10dp"
+
+                android:layout_marginTop="10dp"/>
+
+
+            <TextView
+                android:id="@+id/tv_faq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp"
+
+                android:text="@string/faq_tickect"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

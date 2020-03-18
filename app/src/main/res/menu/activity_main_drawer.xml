@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/contact"
+        android:title="@string/contact" />
+    <item
+        android:id="@+id/alternative_currency"
+        android:title="@string/alternative_currency" />
+    <item
+        android:id="@+id/mpin"
+        android:title="@string/mpin" />
+    <item
+        android:id="@+id/changepassword"
+        android:title="@string/changepassword" />
+
+    <item
+        android:id="@+id/support"
+        android:title="@string/support" />
+    <item
+        android:id="@+id/logout"
+        android:title="@string/logout" />
+
+
+</menu>

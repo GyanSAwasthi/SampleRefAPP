@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black">
+
+    <TextView
+        android:id="@+id/mobile_os"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/xyz"
+        android:gravity="left|center"
+        android:textStyle="normal"
+        android:padding="8dp"
+   />
+
+</RelativeLayout>

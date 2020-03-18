@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/Ethereum"
+        android:icon="@drawable/ic_menu_camera"
+        android:title="Ethereum" />
+    <item
+        android:id="@+id/Ripple"
+        android:icon="@drawable/xyz"
+
+        android:title="Ripple" />
+    <item
+        android:id="@+id/Bitcoin"
+        android:icon="@drawable/xyz"
+
+        android:title="Bitcoin Cash" />
+    <item
+        android:id="@+id/Nem"
+        android:icon="@drawable/xyz"
+
+        android:title="Nem" />
+
+    <item
+        android:id="@+id/Litecoin"
+        android:icon="@drawable/xyz"
+
+        android:title="Litecoin"
+        />
+    <item
+        android:id="@+id/Monero"
+        android:icon="@drawable/xyz"
+
+        android:title="Monero" />
+
+    <item
+        android:id="@+id/Peercoin"
+        android:icon="@drawable/xyz"
+
+        android:title="Peercoin" />
+
+
+</menu>

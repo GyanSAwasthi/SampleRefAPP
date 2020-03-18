@@ -1,0 +1,167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundcolor"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/imgbtnbackreq"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/back_button_white" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/etSearchCurrency"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="9.5"
+                    android:text="@string/request_cryptocurrency"
+                    android:textColor="@color/white"
+                    android:textSize="22dp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_req_crypto_amt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                app:errorTextAppearance="@style/EmailErrorAppearance"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+                <EditText
+                    android:id="@+id/et_input__req_crypto_amt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_enter_crypt_amt"
+                    android:inputType="number"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/colorPrimary"
+                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_req_crypto_contact"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:textColorHint="@color/colorPrimary"
+                    app:errorTextAppearance="@style/EmailErrorAppearance"
+                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+                    <EditText
+                        android:id="@+id/et_input__req_crypto_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_select_contact"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@android:color/black" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_contacts_black_24dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout__req_crypto_send_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorPrimary"
+                app:errorTextAppearance="@style/EmailErrorAppearance"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+                <EditText
+                    android:id="@+id/et_input_req_crypto_send_wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_desti_wallet_address"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@android:color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnSubmitReq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@color/backgroundcolor"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="@string/btn_send_req"/>
+
+
+        </LinearLayout>
+
+</ScrollView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imgviewstatus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:background="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/tvchild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textSize="14dp"
+            android:text="this is child"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvbtc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:text="this is child"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="this is child"
+            android:textColor="@android:color/darker_gray" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <android.support.v4.widget.DrawerLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="end"
+        >
+
+        <include
+            layout="@layout/tool_bar_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+///////////////////////////////////////////////////////////////
+
+        <!-- The navigation drawer left-->
+        <LinearLayout
+            android:id="@+id/drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:background="@color/backgroundcolor">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="left"
+                    android:gravity="left">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/logo"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4.5"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:text="@string/Bitcoin"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:textSize="10dp"
+                    android:textColor="@color/white"
+                    android:text="2.999999999999 BTC"/>
+
+            </LinearLayout>
+
+            <View android:id="@+id/titleDivider"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#ffffff"
+                android:layout_marginTop="10dp"/>
+
+            <ListView android:id="@+id/drawer_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:choiceMode="singleChoice"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:textColor="@android:color/white"
+                android:background="@color/backgroundcolor" />
+
+        </LinearLayout>
+/////////////////////////////////////////////////////////////////////////
+
+
+<!--
+navigation drawer right
+-->
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:fitsSystemWindows="true"
+            app:itemTextColor="@color/white"
+            android:background="@color/backgroundcolor"
+            app:itemIconTint="@color/colorPrimary"
+            app:headerLayout="@layout/nav_header_main"
+            app:menu="@menu/activity_main_drawer" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+

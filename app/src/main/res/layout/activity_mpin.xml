@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pin_content_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            card_view:cardBackgroundColor="@color/grey"
+            card_view:cardCornerRadius="6dp"
+            card_view:cardElevation="6dp"
+            card_view:contentPadding="25dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/set_your_mpin_header"
+
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/set_mpin_detail"
+                        android:textColor="@color/black"
+
+                        android:textSize="13dp"
+
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/pin_label_margin"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/enter_mpin"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/setpin_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/setpin_first_edittext"
+                        style="@style/pin_edittext_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/pin_content_desc"
+                        android:inputType="numberPassword"
+                        android:background="@drawable/text_box_underline_selector"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:password="true"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/setpin_second_edittext"
+                        style="@style/pin_edittext_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/pin_content_desc"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/text_box_underline_selector"
+                        android:inputType="numberPassword"
+                        android:password="true"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/setpin_third_edittext"
+                        style="@style/pin_edittext_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/text_box_underline_selector"
+                        android:contentDescription="@string/pin_content_desc"
+                        android:inputType="numberPassword"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/setpin_forth_edittext"
+                        style="@style/pin_edittext_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+
+                        android:contentDescription="@string/pin_content_desc"
+                        android:background="@drawable/text_box_underline_selector"
+                        android:inputType="numberPassword"
+                        android:password="true"
+                        android:textColor="@color/black" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/pin_label_margin"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/confirm_mpin"
+                        android:textColor="@color/black"
+
+                        android:textSize="13dp"
+
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                    <EditText
+                        android:id="@+id/setpin_hidden_edittext"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@null"
+                        android:contentDescription="@string/pin_content_desc"
+                        android:cursorVisible="false"
+                        android:gravity="center_horizontal"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:password="true"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+                ///////////////////////////////////////////////////////////
+
+                <LinearLayout
+                    android:id="@+id/cnf_pin_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/cnf_pin_first_edittext"
+                        style="@style/pin_edittext_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/pin_content_desc"
+                        android:inputType="numberPassword"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/text_box_underline_selector"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/cnf_pin_second_edittext"
+                        style="@style/pin_edittext_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/pin_content_desc"
+                        android:inputType="numberPassword"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/text_box_underline_selector"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/cnf_pin_third_edittext"
+                        style="@style/pin_edittext_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/pin_content_desc"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/text_box_underline_selector"
+                        android:inputType="numberPassword"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/cnf_pin_forth_edittext"
+                        style="@style/pin_edittext_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/pin_content_desc"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/text_box_underline_selector"
+                        android:inputType="numberPassword"
+                        android:textColor="@color/black" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                    <EditText
+                        android:id="@+id/cnf_pin_hidden_edittext"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@null"
+                        android:contentDescription="@string/pin_content_desc"
+                        android:cursorVisible="false"
+                        android:gravity="center_horizontal"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:password="true"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                ////////////////////////////////////////////////////////////////////
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/white"
+        android:background="@color/backgroundcolor"
+        android:text="@string/save"/>
+</LinearLayout>

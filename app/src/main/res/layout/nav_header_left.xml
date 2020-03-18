@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical"
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="50dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+           android:layout_weight="1.5"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="left"
+            android:gravity="left">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/logo"/>
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.5"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:text="@string/Bitcoin"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            android:text="2.999999999999 BTC"/>
+
+    </LinearLayout>
+
+    <View android:id="@+id/titleDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

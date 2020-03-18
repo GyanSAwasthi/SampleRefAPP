@@ -1,0 +1,213 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/reset_pwd_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:textColor="@color/white"
+            android:textSize="20dp" />/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:weightSum="10">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_first_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textColorHint="@color/white"
+                app:errorTextAppearance="@style/FirstNameErrorAppearance">
+
+                <EditText
+                    android:id="@+id/et_input_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|left"
+                    android:hint="@string/hint_firstname"
+                    android:inputType="textEmailAddress"
+                    android:minLines="3"
+                    android:textColor="@android:color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight=".1" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_last_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.9"
+
+                android:textColorHint="@color/white"
+                app:errorTextAppearance="@style/LastNameErrorAppearance">
+
+                <EditText
+                    android:id="@+id/et_input_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_lastname"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@android:color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            app:errorTextAppearance="@style/EmailErrorAppearance">
+
+            <EditText
+                android:id="@+id/et_input_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_user_name"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/white" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_user_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            app:errorTextAppearance="@style/EmailErrorAppearance">
+
+            <EditText
+                android:id="@+id/et_input_user_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_UserId"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/white" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            app:passwordToggleDrawable="@drawable/toggle_password"
+            app:errorTextAppearance="@style/PasswordErrorAppearance">
+
+            <EditText
+                android:id="@+id/et_input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:textColor="@android:color/white" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_signup_cnf_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            app:passwordToggleDrawable="@drawable/toggle_password"
+            app:errorTextAppearance="@style/PasswordErrorAppearance">
+
+            <EditText
+                android:id="@+id/et_input_signup_cnf_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_cnf_password"
+                android:inputType="textPassword"
+                android:textColor="@android:color/white" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_ref_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white">
+
+            <EditText
+                android:id="@+id/et_input_ref_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_referral_code"
+                android:maxLines="1"
+                android:inputType="text"
+                android:scrollHorizontally="true"
+                android:textColor="@android:color/white" />
+        </android.support.design.widget.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/ckbox_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/termsandconditions"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="@string/btn_signup"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/alreadyAccountTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/alreadyaccount"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
